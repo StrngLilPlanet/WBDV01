@@ -1,0 +1,8 @@
+/* Imported  Header */
+
+header {
+	position: fixed;
+	top: 0;
+	@include showbox();
+	height: $headerHeight;
+}

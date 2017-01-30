@@ -1,0 +1,23 @@
+/* Imported _wrapper.scss */
+body {
+	background-color: $primaryLight;
+	margin: 0;
+	padding: 0;
+}
+
+nav {
+	position: fixed;
+	top: $headerHeight;
+	height: $navbarHeight;
+	@include showbox();
+	&:hover {@include askew(135deg);}
+}
+
+main {
+	@extend img;
+	position: absolute;
+	overflow-y: auto;
+	top: $headerHeight + $navbarHeight;
+	bottom: $footerHeight;
+	@include showbox();
+}
